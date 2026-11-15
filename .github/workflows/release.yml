@@ -20,7 +20,7 @@ jobs:
       GITHUB_OAUTH: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - name: Clone project
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           fetch-depth: 0
 
@@ -41,7 +41,7 @@ jobs:
         uses: BigWigsMods/packager@v2
 
       - name: Keep the zip
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: XbiGold
           path: .release/*.zip
