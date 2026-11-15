@@ -1,0 +1,4 @@
+.release/
+.env
+RELEASE_NOTES.md
+*.zip

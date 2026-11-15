@@ -1,0 +1,47 @@
+# XbiGold : crée le zip et l'envoie sur CurseForge.
+# - un tag "v1.2.3" poussé  -> zip + envoi sur CurseForge + version sur GitHub
+# - un push sur main         -> zip seulement (test), téléchargeable dans l'onglet Actions
+name: Package and release
+
+on:
+  push:
+    branches: [main]
+    tags: ['v*']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    env:
+      CF_API_KEY: ${{ secrets.CF_API_KEY }}
+      GITHUB_OAUTH: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - name: Clone project
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # Notes de version = la première section "## ..." de CHANGELOG.md
+      - name: Release notes
+        run: |
+          awk '/^## /{n++} n==1' CHANGELOG.md > RELEASE_NOTES.md
+          cat RELEASE_NOTES.md
+
+      - name: Package only (test build)
+        if: ${{ !startsWith(github.ref, 'refs/tags/') }}
+        uses: BigWigsMods/packager@v2
+        with:
+          args: -d
+
+      - name: Package and upload to CurseForge
+        if: ${{ startsWith(github.ref, 'refs/tags/') }}
+        uses: BigWigsMods/packager@v2
+
+      - name: Keep the zip
+        uses: actions/upload-artifact@v4
+        with:
+          name: XbiGold
+          path: .release/*.zip

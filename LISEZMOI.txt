@@ -1,0 +1,58 @@
+XbiGold - se faire de l'or sur WoW Forever
+==========================================
+
+INSTALLATION
+  Le plus simple : appli CurseForge, installation « Forever », chercher XbiGold
+  (les mises à jour arrivent toutes seules).
+  À la main : copier le dossier "XbiGold" dans :
+  World of Warcraft\_forever_\Interface\AddOns\
+  puis relancer le jeu (ou /reload).
+
+OUVRIR
+  /xg, ou clic sur l'icône pièce d'or de la minicarte.
+  La fenêtre s'ouvre aussi toute seule à côté de l'hôtel des ventes.
+
+CE QUE ÇA FAIT
+  Scan de l'HV      En ouvrant l'HV, XbiGold récupère toutes les annonces en une fois
+                    (Blizzard autorise un scan toutes les 15 min). Les prix sont gardés 21 jours.
+  Bonnes affaires   Annonces trop basses : erreurs de prix, ou objets vendus moins cher
+                    que ce que paie le marchand. Bouton "Acheter" : 1 clic pour vérifier
+                    le prix, 1 clic pour confirmer. L'achat est annulé si le prix a monté.
+                    Colonnes "Ventes/j" et "Écoulé en" : combien il s'en vend par jour et en combien
+                    de temps tu revendras tout. Option "Seulement ce qui se revend vite".
+  À farmer          Herbes, minerais, cuirs, tissus, éléments et objets de quête qui se vendent,
+                    triés par intérêt pour ton niveau, avec où les farmer.
+  Métiers           Ouvre une fois la fenêtre de chaque métier : XbiGold calcule ce qui rapporte
+                    (coût des composants vs prix HV), la façon la moins chère de monter ton métier,
+                    et les recettes qui vaudraient le coup d'être apprises. Métiers de récolte :
+                    renvoie vers ce qui se vend le mieux dans À farmer.
+  Marchands         Ouvre un PNJ : le bénéfice possible s'affiche en vert sur ses objets.
+                    Liste des recettes en stock limité à racheter et revendre.
+  Tendances         Ce qui monte, ce qui baisse, et ce que plus personne ne vend.
+  Mes sacs          HV ou marchand ? Prix conseillé pour chaque objet. Vente des gris.
+  Session farm      Démarre avant de farmer : butin + or ramassé = tes vrais po/heure.
+                    Historique et meilleures zones.
+  Partage           Les joueurs de ta guilde et de ton groupe qui ont XbiGold s'échangent leurs scans
+                    automatiquement : tout le monde a des prix à jour. Plus vous êtes, mieux c'est !
+  À l'HV            Clic sur n'importe quel objet dans XbiGold : il est cherché directement
+                    dans l'hôtel des ventes (bouton "Chercher à l'HV" aussi sur la fiche).
+  Fiche objet       Clic droit sur un objet dans XbiGold (clic simple hors de l'HV), Alt+clic dans tes sacs ou la discussion,
+                    ou /xg prix <nom> : courbe des prix sur 21 jours et meilleures heures pour vendre.
+  Infobulles        Valeur HV, prix marchand, tendance, ventes estimées, quêtes qui demandent l'objet.
+
+COMMANDES
+  /xg            ouvrir / fermer
+  /xg scan       scan complet (HV ouvert)
+  /xg session    démarrer / mettre en pause le farm
+  /xg stop       terminer la session
+  /xg prix <nom> fiche et graphique d'un objet
+  /xg reset      effacer les prix du marché actuel
+
+BON À SAVOIR
+  - Sur Forever, l'HV est commun à toute la région par type de royaume et faction :
+    plus tu scannes souvent, plus les conseils sont fiables (3 jours de scans = fiabilité "haute").
+  - Les HV neutres (Gadgetzan, Baie-du-Butin, Long-guet) ont leurs propres prix et prennent 15 %.
+  - XbiGold utilise aussi les prix d'Auctionator ou de TSM si tu les as, pour les objets pas encore scannés.
+  - Les ventes par jour sont une estimation (annonces disparues entre deux scans).
+
+Par Xbi.

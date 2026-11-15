@@ -1,0 +1,35 @@
+## Interface: 16001
+## Title: |cff4fc3f7Xbi|r|cffffd100Gold|r
+## Notes: Auction house deals, what to farm, vendor flips, profession profits, price charts and gold per hour.
+## Notes-frFR: Trouve les bonnes affaires de l'hôtel des ventes, ce qu'il faut farmer, les reventes de marchand et mesure tes po/heure.
+## Author: Xbi
+## Version: 1.3.1
+## Category: Auction House
+## Category-frFR: Hôtel des ventes
+## X-License: GPL-3.0-only
+## X-Curse-Project-ID: 1808099
+## IconTexture: Interface\Icons\INV_Misc_Coin_02
+## SavedVariables: XbiGoldDB
+## SavedVariablesPerCharacter: XbiGoldCharDB
+## OptionalDeps: Auctionator, TradeSkillMaster
+
+Util.lua
+Data_Quests.lua
+Data_Farm.lua
+Database.lua
+Pricing.lua
+Scanner.lua
+Sync.lua
+Buyer.lua
+Merchant.lua
+Professions.lua
+Session.lua
+Tooltip.lua
+UI_Widgets.lua
+UI_Main.lua
+UI_Tabs.lua
+UI_Prof.lua
+UI_Chart.lua
+UI_Item.lua
+Minimap.lua
+Core.lua
